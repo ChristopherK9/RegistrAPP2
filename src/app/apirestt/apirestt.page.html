@@ -1,0 +1,11 @@
+<ion-content class="ion-padding">
+  <ion-button (click)="goHome()">HOME</ion-button>
+  <ion-card *ngFor="let photo of photos">
+    <ion-card-header>
+      <ion-card-title>{{ photo.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

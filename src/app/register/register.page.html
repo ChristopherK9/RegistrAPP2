@@ -1,0 +1,30 @@
+<ion-content class="ion-padding">
+  <div class="register-form">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Registro de Usuario</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form (ngSubmit)="onRegister()" [formGroup]="registerForm">
+          <ion-item>
+            <ion-label position="floating">Correo Electrónico</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+
+          <ion-button expand="block" type="submit" [disabled]="!registerForm.valid">
+            Registrarse
+          </ion-button>
+        </form>
+        <div class="link-container">
+          <a routerLink="/home">Iniciar Sesión</a>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

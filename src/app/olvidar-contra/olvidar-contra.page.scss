@@ -1,0 +1,31 @@
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .reset-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  p {
+    margin-top: 150px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  ion-input {
+    margin-top: 20px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    width: 100%;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  

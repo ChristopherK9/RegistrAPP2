@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>RegistrAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">RegistrAPP</ion-title>
+      <ion-text style="margin-left: 13px;">Bienvenido {{username}}</ion-text>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-button>Generar QR</ion-button>
+  <ion-button>Lista de alumnos</ion-button>
+  
+  <ion-button (click)="goRoute()">Api rest</ion-button>
+
+  <ion-button (click)="logout()">Cerrar Sesión</ion-button>
+
+  
+
+</ion-content>
